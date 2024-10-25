@@ -1,0 +1,143 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1c1c1c, #444);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  font-size: 1rem; 
+  background-color: #fafafa;
+  color: #333; 
+  transition: border-color 0.2s ease, background-color 0.2s ease; 
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3a8eeb;
+  outline: none;
+}
+.container {
+  width: 25%;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
+}
+h1 {
+  font-size: 2.5rem;
+  color: #f5f5f5;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Brush Script MT', cursive;
+}
+
+label
+ {
+  font-size: 1rem;
+  color: #f5f5f5;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #d2d1e0, #0c08d8);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+button {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(255, 65, 108, 0.6);
+}
+
+/*Responsives */
+@media (max-width: 1280px) {
+  .container {
+    padding: 30px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  button-container {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
